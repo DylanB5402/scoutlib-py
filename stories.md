@@ -22,3 +22,5 @@ During high school I did competitive robotics in the [FIRST Robotics Competition
 - Entire Event Analyzed Data
 - Raw Data 
 - List of teams
+
+Wireframes: https://docs.google.com/presentation/d/1fE9YHAXFA34MKbdxMvBhRvVo7byEGFlMB4LI8TBx6J0/edit?usp=sharing
