@@ -1,0 +1,119 @@
+
+{% extends 'base.html' %}
+{% block content %}
+    
+<div class="columns">
+    
+    <form action="/submit" class="column is-6" method="post">
+
+        <div class="column">
+            <label class="label">Scout Name</label>
+            <input class="input" name="scout_name" type="text" placeholder="Name">
+        </div>
+
+        <div class="column is-3">
+            <label class="label">Match Number</label>
+            <input class="input" name="match_num" type="number" placeholder="Number">
+        </div>
+
+        <div class="column is-3">
+            <label class="label">Team Number</label>
+            <input class="input" name="team_num" type="number" placeholder="Number">
+        </div>
+
+        <div class="column control">
+            <label class="label">Alliance Color</label>
+            <label class="radio">
+              <input type="radio" name="alliance_color" value="red">
+              Red
+            </label>
+            <br/>
+            <label class="radio">
+              <input type="radio" name="alliance_color" value="blue">
+              Blue
+            </label>
+        </div>
+
+        <div class="column">
+            <label class="label">Autonomous:</label>
+        </div>
+
+        <div class="column control">
+            <label class="label"> Did the robot move in Auto?</label>
+            <label class="radio">
+              <input type="radio" name="auto_movement" value="yes">
+              Yes
+            </label>
+            <br/>
+            <label class="radio">
+              <input type="radio" name="auto_movement" value="no">
+              No
+            </label>
+        </div>
+
+        <div class="column is-3" >
+            <label class="label">Balls Scored (Auto)</label>
+            <input class="input" name="auto_balls_scored" type="number" placeholder="0">
+        </div>
+
+        <div class="column is-3">
+            <label class="label">Balls Missed (Auto)</label>
+            <input class="input" name="auto_balls_missed" type="number" placeholder="0">
+        </div>
+
+        <div class="column">
+            <label class="label">Teleop:</label>
+        </div>
+
+        <div class="column is-3">
+            <label class="label">Balls Scored (Teleop)</label>
+            <input class="input" name="teleop_balls_scored" type="number" placeholder="0">
+        </div>
+
+        <div class="column is-3">
+            <label class="label">Balls Missed (Teleop)</label>
+            <input class="input" name="teleop_balls_missed" type="number" placeholder="0">
+        </div>
+        
+        <div class="column">
+            <label class="label">Endgame:</label>
+        </div>
+
+        <div class="column control">
+            <label class="label"> Did the robot climb?</label>
+            <label class="radio">
+              <input type="radio" name="climbed" value="yes">
+              Yes
+            </label>
+            <br/>
+            <label class="radio">
+              <input type="radio" name="climbed" value="no">
+              No
+            </label>
+        </div>
+
+        <div class="column control">
+            <label class="label"> Did the robot balance?</label>
+            <label class="radio">
+              <input type="radio" name="balanced" value="yes">
+              Yes
+            </label>
+            <br/>
+            <label class="radio">
+              <input type="radio" name="balanced" value="no">
+              No
+            </label>
+        </div>
+
+        <div class="column">
+            <label class="label">Comments</label>
+            <textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+        </div>
+
+        <div class="column control">
+            <button class="button is-link type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
