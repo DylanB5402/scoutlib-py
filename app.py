@@ -10,3 +10,8 @@ def feed():
 @app.route("/submit", methods=['GET', 'POST'])
 def test_submit():
     return flask.request.form
+
+@app.route("/team/<int:team>")
+def team_view(team : int):
+    title_string = "Team View: " + str(team)
+    return flask.render_template("team_view.html", title=title_string)
