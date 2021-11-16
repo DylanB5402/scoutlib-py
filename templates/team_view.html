@@ -5,13 +5,28 @@
     <div class="columns">
         <div class="column">
             <img src="{{url_for('static', filename='687_robot.jpg')}}" width="500px" height="auto"/>
+            {% for (title, value) in highlights %}
+                <h3>{{title}}: {{value}}</h3>
+            {% endfor %}
         </div>
         <div class="column">
+            <h2> <strong> Raw Data: </strong></h2>
             <table class="table">
-                <!-- <thead>taco</thead> -->
+                <thead>
+                    {% for header in headers %}
+                        <th> {{header}} </th>
+                    {% endfor %}
+                </thead>
+                <tbdody>
+                    {% for row in raw_match_data %}
+                        <tr>
+                            {% for data in row %}
+                                <td>{{data}}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbdody>
             </table>
-        </div>
+        </div>  
     </div>
-
-    
 {% endblock %}
