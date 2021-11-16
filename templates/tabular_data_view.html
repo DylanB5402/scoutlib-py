@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <table class="table">
+        <thead>
+            {% for header in headers %}
+                <th> {{header}} </th>
+            {% endfor %}
+        </thead>
+        <tbdody>
+            {% for row in rows %}
+                <tr>
+                    {% for data in row %}
+                        <td>{{data}}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbdody>
+    </table>
+
+{% endblock %}
