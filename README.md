@@ -11,3 +11,6 @@ Possible future plans:
 - Google Sheets integration
 
 run locally with auto reload on: FLASK_APP=app.py FLASK_ENV=development flask run
+
+workflow notes:
+user submits match data for one team's performance in a match -> raw data is stored in raw data table -> analyzed data for that team is re-calculated and stored in analyzed data table

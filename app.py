@@ -5,7 +5,7 @@ import data
 import database
 
 app = Flask(__name__)
-db = database.ScoutingDatabase("scouting_data.db")
+raw_db = database.RawDataDatabase("scouting_data.db")
 
 @app.route("/")
 def feed():
@@ -13,12 +13,15 @@ def feed():
 
 @app.route("/submit", methods=['GET', 'POST'])
 def test_submit():
+    # print(flask.request.form['alliance_color'])
+    # print(type(flask.request.form))
+    raw_db.insert_raw_data(flask.request.form)
     return flask.request.form
 
 @app.route("/team/<int:team>")
 def team_view(team : int):
     title_string = "Team View: " + str(team)
-    return flask.render_template("team_view.html", title=title_string, headers=data.raw_match_data_headers_687, raw_match_data = data.raw_match_data_687, highlights=data.analyzed_data_team_highlights)
+    return flask.render_template("team_view.html", title=title_string, headers=data.raw_match_data_headers_687, raw_match_data = raw_db.get_raw_data_by_team_anonymous(687), highlights=data.analyzed_data_team_highlights)
 
 @app.route("/data/analyzed")
 def analyzed_data():
@@ -30,4 +33,5 @@ def ranked_data():
 
 @app.route("/data/raw")
 def raw_data():
-    return flask.render_template("tabular_data_view.html", title="Raw Data", headers=data.raw_match_data_headers, rows=data.raw_match_data)
+    # print(raw_db.get_raw_data_by_team_anonymous(687))
+    return flask.render_template("tabular_data_view.html", title="Raw Data", headers=data.raw_match_data_headers, rows=raw_db.get_all_raw_data_anonymous())
