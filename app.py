@@ -2,8 +2,10 @@ from flask import Flask
 import flask
 
 import data
+import database
 
 app = Flask(__name__)
+db = database.ScoutingDatabase("scouting_data.db")
 
 @app.route("/")
 def feed():
