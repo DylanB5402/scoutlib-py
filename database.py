@@ -1,11 +1,12 @@
 import sqlite3
 
-class RawDataDatabase:
+class Database:
 
     def __init__(self, db_file : str):
         self.filename = db_file
-        create_table = 'CREATE TABLE IF NOT EXISTS raw_scouting_data (data_id INTEGER PRIMARY KEY AUTOINCREMENT, scout_name TEXT, team_number INTEGER, match_number INTEGER, alliance_color TEXT, auto_movement TEXT, auto_balls_scored INTEGER, auto_balls_missed INTEGER, teleop_balls_scored INTEGER, teleop_balls_missed INTEGER, climb TEXT, balance TEXT, comment TEXT);'
-        self.execute_void_query(create_table)
+        create_raw_data_table = 'CREATE TABLE IF NOT EXISTS raw_scouting_data (data_id INTEGER PRIMARY KEY AUTOINCREMENT, scout_name TEXT, team_number INTEGER, match_number INTEGER, alliance_color TEXT, auto_movement TEXT, auto_balls_scored INTEGER, auto_balls_missed INTEGER, teleop_balls_scored INTEGER, teleop_balls_missed INTEGER, climb TEXT, balance TEXT, comment TEXT);'
+        create_analyzed_data_table = ''
+        self.execute_void_query(create_raw_data_table)
 
     def execute_void_query(self, query_text, *parameters):
         conn = sqlite3.connect(self.filename)
@@ -45,4 +46,6 @@ class RawDataDatabase:
         query = 'SELECT team_number, match_number, auto_movement, auto_balls_scored, auto_balls_missed, teleop_balls_scored, teleop_balls_missed, climb, balance FROM raw_scouting_data;'
         return self.execute_return_query(query, headers=False)
 
-    
+    # def update_analyzed_data(self, team_number : int):
+
+
