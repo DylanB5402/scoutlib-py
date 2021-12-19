@@ -1,0 +1,378 @@
+data_id,Name ,Team Number (of the team you are scouting) ,Match Number ,Alliance Color,Did they cross the initiation line? ,Balls Scored (auto) [High],Approx. how many balls did they miss? (auto) [High],Balls Scored (teleop) [High],Approx. how many balls did they miss? [High],Climbed?,Comments
+1,Pra,6938,1,Red,0,0,0,0,0,0,Robot disabled 
+2,Isa,5510,1,Red,1,0,0,0,0,0,"Robot can’t move, was only spinning. Can’t shoot, can’t intake, can’t do anything."
+3,Uly,606,1,Red,1,0,0,0,0,0,
+4,Yae,1452,1,Blue,1,0,0,2,2,0,Tried to climb but failed; robot stuttered a lot
+5,Tif,5669,1,Blue,1,0,0,0,5,0,Kept missing balls when they were trying to gather balls to shoot
+6,Yae,5634,2,Blue,0,0,0,0,0,0,"**For my previous response, the omnicats did not cross the initiation line
+
+For this match: The robot was not present during the match so I wasn’t able to scout properly."
+7,Pra,6658,2,Red,1,0,0,0,6,0,
+8,Isa,8159,2,Red,0,0,0,0,0,0,"Did not move, cannot move or shoot. Did not do anything during auto."
+9,Mat,3408,2,Blue,1,2,0,4,4,1,
+10,Uly,4501,2,Red,1,0,3,0,2,0,
+11,Tif,4019,2,Blue,1,0,0,0,2,0,"Robot wasn’t moving much so I couldn’t tell how the driver could drive
+Flywheel was dead"
+12,Mat,1515,3,Blue,0,2,0,4,4,0,
+13,Yae,5512,3,Blue,0,0,0,0,0,0,robot didn’t move 
+14,Uly,3952,3,Red,0,0,0,0,3,0,
+15,Tif,5553,3,Blue,1,1,2,6,2,1,"Relatively smooth driving compared to the rest of the bots, drops some balls while shooting"
+16,Pra,597,3,Red,1,0,0,9,2,0,
+17,Isa,7455,3,Red,0,0,0,0,0,0,"They drove around, but ended up disabling. They robot seemed very light, which seems like a bad idea to play defense against heavy robots."
+18,Mat,4123,4,Blue,1,5,0,3,2,1,
+19,Isa,6904,4,Red,1,0,0,0,0,1,Played just defense. Had a good climb.
+20,Uly,2576,4,Red,1,0,0,5,2,0,
+21,Pra,2710,4,Red,0,0,0,5,0,1,
+22,Tif,87,4,Blue,1,2,0,4,1,0,Had a little trouble keeping balls in the intake but driving was godly
+23,Yae,841,4,Blue,0,0,0,4,3,0,
+24,Mat,4201,5,Blue,1,2,0,13,0,1,
+25,Pra,2637,5,Red,1,0,0,0,1,0,
+26,Tif,1759,5,Blue,1,0,0,0,0,0,Robot just kind of died and would move super slowly around with 0 particular purpose 
+27,Yae,3512,5,Blue,1,2,0,0,0,0,"Something wrong happened to their flywheel? Wasn’t able to score during teleop
+"
+28,Uly,7447,5,Red,1,0,0,0,0,0,
+29,Isa,980,5,Red,0,0,0,0,0,0,"They had balls, but could not shoot, so attempted to then defend, but failed. "
+30,Jam,4999,6,Blue,1,0,0,3,2,0,
+31,Zac,987,6,Blue,1,4,2,25,4,1,epic
+32,Hee,6000,6,Red,1,2,1,0,0,0,Team 702 drived team 6000
+33,Isa,4400,6,Blue,1,0,0,0,0,0,"- did not have the ability to score 
+- mostly moved around the field and waited to park in the center during endgame 
+"
+34,Mag,5702,6,Red,1,0,0,6,3,1,
+35,Jam,4578,7,Blue,1,0,0,0,3,0,They could have climbed but the hook wasn’t working. Also the robot stopped midway through the match.
+36,Zac,207,7,Blue,1,0,0,1,4,0,
+37,Isa,5089,7,Blue,0,3,0,7,2,0,
+38,Hee,7051,7,Red,0,0,0,1,1,0,
+39,Ale,5124,7,Red,1,3,0,11,2,1,
+40,Ale,5124,6,Red,1,1,2,0,0,0,
+41,Zac,3408,8,Blue,1,3,0,2,3,1,
+42,Mag,1836,7,Red,1,0,0,0,0,0,
+43,Ale,606,8,Red,1,0,0,0,0,0,
+44,Jam,4501,8,Blue,1,3,0,4,5,0,
+45,Hee,597,8,Red,0,0,2,7,0,0,Their climb took too long to extend
+46,Jam,7033,9,Blue,1,0,0,0,0,0,The bumper fell of so they were disabled.
+47,Zac,6938,9,Blue,0,0,0,0,0,0,
+48,Hee,980,9,Red,1,0,0,0,0,0,Did not move
+49,Ale,2576,9,Red,1,0,0,2,2,0,
+50,Mag,5669,9,Red,1,0,0,0,0,0,"Very loose structure, drive was not right, outtake is inconsistent "
+51,Isa,4400,9,Blue,0,0,0,2,0,0,"- has the ability this time to actually score and make high goals 
+- driver just spent too much time aiming and making their shots accurate "
+52,Zac,4964,10,Blue,1,0,0,0,0,0,Missing from game
+53,Jam,7455,10,Blue,0,0,0,0,0,0,They were solely defense. They were just a drivebase almost.
+54,Isa,5553,10,Blue,0,3,0,4,3,1,
+55,Mag,4019,10,Red,0,0,0,0,2,0,"Drive was slow, out take is slow, ball are carried in a vertical, circle tray storage thing"
+56,Hee,5510,10,Red,1,0,0,2,1,0,
+57,Ale,841,10,Red,0,0,0,2,3,0,
+58,Rus,2710,11,Blue,1,3,0,13,0,0,
+59,Ken,3952,11,Blue,1,0,1,0,0,0,Almost 0 movement
+60,Rus,987,12,Blue,1,5,1,8,4,0,
+61,Ken,1515,12,Blue,1,3,0,0,0,0,
+62,Aya,5669,12,Red,1,0,0,1,1,0,They stopped moving many times and only shot 2 balls. They tried to climb but they were not successful. 
+63,Isa,6000,13,Red,0,0,3,0,0,0,stopped moving after auto
+64,Ken,7447,13,Blue,1,0,0,0,0,0,
+65,Rus,5802,13,Blue,1,2,0,0,0,0,intake 0 spin
+66,Aya,6658,13,Red,1,1,0,0,0,0,They moved around but didn't try to shoot or collect power cells. 
+67,Isa,7051,14,Red,0,0,0,0,4,0,couldnt shoot and tried defense?
+68,Aya,5512,14,Red,0,0,0,0,0,0,They moved around but didn't collect or shoot too many times. 
+69,Rus,687,14,Blue,0,3,0,6,3,0,epic driving
+70,Ken,5124,14,Blue,1,3,0,3,6,1,
+71,Ken,4999,15,Blue,1,0,0,0,0,0,uh oh stinky
+72,Roy,207,15,Red,1,0,0,4,9,0,
+73,yun,6938,15,Blue,0,0,0,0,0,0,did not show up on the match; got a red card
+74,Ken,5510,16,Blue,1,0,1,0,0,0,double stinky
+75,Roy,1515,16,Red,0,0,0,0,3,0,"halfway thru match, robot was non-functional and did not move"
+76,yun,6658,16,Blue,1,0,0,2,2,0,
+77,Dav,597,16,Blue,0,0,0,0,0,0,Don't really aim well but was mobile
+78,Roy,4201,17,Red,1,6,0,8,2,1,
+79,Tan,4400,17,Red,0,0,0,3,5,0,
+80,Ang,8159,17,Blue,0,0,0,0,0,0,One of the parts on their intake flew off while they were driving...
+81,Dav,7051,17,Blue,0,0,0,0,3,0,
+82,Ken,3952,17,Blue,1,0,0,0,0,0,
+83,Ken,6000,18,Blue,1,1,2,0,0,0,
+84,Roy,841,18,Red,1,0,0,0,0,0,
+85,Dav,5634,18,Blue,0,0,0,0,0,0,
+86,Tan,5089,18,Red,1,3,0,7,1,0,
+87,Ang,606,18,Blue,1,0,0,0,0,0,Didn’t attempt shooting
+88,Jus,207,19,Red,1,0,0,4,4,0,
+89,Jac,5669,19,Red,1,0,0,1,5,1,Motor power is low. Slow movement speed
+90,Zac,1197,20,Blue,1,6,0,6,2,1,
+91,Jus,2710,20,Red,1,3,0,11,3,0,
+92,Alo,7185,7185,Red,0,0,0,0,0,0,
+93,Alo,3512,21,Red,1,0,0,0,0,1,
+94,Jus,987,21,Red,1,3,2,21,4,1,Fast and accurate shooter. Control panel
+95,Jac,3408,21,Red,1,0,0,2,4,1,
+96,Alo,4964,22,Red,0,0,0,0,0,0,They didn't play in this match. 
+97,Jus,4578,22,Red,1,0,0,1,2,0,
+98,Zac,2637,22,Blue,0,2,0,8,1,0,
+99,Jac,7033,22,Red,1,0,0,0,0,0,
+100,Lil,1452,23,Blue,1,0,3,0,2,0,
+101,Jus,6938,23,Red,1,0,0,0,0,0,"Yellow card 0w, red card earlier? Broken intake"
+102,Zac,597,23,Blue,1,1,2,6,0,0,
+103,Lil,7051,23,Blue,0,0,0,0,1,0,
+104,Jac,2710,23,Red,1,0,0,12,0,1,Intake needs improvement 
+105,Alo,6000,23,Red,1,0,3,0,0,0,"In the beginning of the teleop, they stopped moving and went to the 1 instead. "
+106,Bra,4501,23,Blue,1,5,0,0,2,0,
+107,Jus,5802,24,Red,1,3,0,6,5,1,
+108,Bra,5510,24,Blue,1,0,0,0,0,0,
+109,Alo,5634,24,Red,1,0,0,0,0,0,
+110,Jac,4201,24,Red,1,6,0,13,2,1,
+111,Lil,4123,24,Blue,1,3,0,12,0,1,
+112,Yae,3512,5,Blue,1,2,0,0,0,0,"Something wrong happened to their flywheel? Wasn’t able to score during teleop
+"
+113,Bel,2637,25,Blue,1,0,2,0,0,0,The robot did not shoot during teleop
+114,Gia,7033,25,Blue,1,0,0,0,0,0,
+115,And,687,25,Red,0,0,0,0,0,0,Good driver but robot was dead from the start
+116,Zac,4019,26,Red,1,0,0,1,0,0,
+117,And,4400,26,Red,0,2,1,1,6,0,
+118,Gia,6904,26,Blue,1,0,0,0,0,0,
+119,Bel,3512,26,Blue,1,0,0,0,0,1,Didn't try to shoot. Only did defense
+120,And,980,27,Red,0,0,0,0,0,0,Didn’t show up to match
+121,Gia,7185,27,Blue,1,0,3,0,0,0,
+122,Sia,5089,27,Red,1,1,0,4,1,0,"Was going to climb, but broke."
+123,Bel,6658,27,Blue,1,0,2,4,3,0,They consistently collected power cells and shot them. 
+124,Zac,4999,27,Red,1,0,0,5,6,0,
+125,Sia,8159,28,Red,1,0,0,0,0,0,
+126,Zac,987,28,Red,1,5,0,12,6,1,
+127,Bel,1515,28,Blue,1,3,0,7,4,1,They were able to score many times and they moved very smoothly. 
+128,Gia,841,28,Blue,1,0,0,5,8,0,Can only shoot two balls at once
+129,And,207,28,Red,1,0,0,9,1,0,
+130,Sia,7455,25,Red,0,0,0,0,0,0,
+131,Sia,5512,26,Red,1,0,0,0,0,0,
+132,Zac,5553,29,Red,1,1,2,2,3,0,
+133,And,2576,29,Red,1,0,0,1,5,0,
+134,GIA,7447,29,Blue,1,0,0,0,0,0,
+135,Bel,1759,29,Blue,1,0,0,0,0,0,They didn't score anything and they didn't do any defense. 
+136,Sia,5669,29,Red,1,0,0,0,3,0,
+137,Bra,2637,30,Blue,1,0,0,5,0,0,
+138,Son,1197,30,Blue,1,1,2,3,7,0,They shot the balls too low
+139,And,5802,30,Red,1,3,0,10,9,0,
+140,Uly,597,30,Blue,1,3,1,7,1,1,
+141,Ang,5124,30,Red,1,3,0,7,3,1,
+142,Son,7455,31,Blue,1,0,0,0,0,0,They moved but they didn't collect or shoot any power cells. 
+143,And,3512,31,Red,1,0,0,0,0,1,"Drove around randomly for the entire match, at the end they climbed."
+144,Uly,6938,31,Blue,0,0,0,0,0,0,
+145,Ang,2710,31,Red,1,2,1,9,1,1,
+146,Bra,8159,31,Blue,1,0,0,0,0,0,
+147,And,1515,32,Red,1,2,2,12,2,1,Climb was balanced with 4201
+148,Ang,4501,32,Red,1,0,3,0,0,0,
+149,Son,4999,32,Blue,1,0,0,3,1,0,They defended against 4201 by pushing. They mostly stayed on the opponent's 1. 
+150,Bra,5553,32,Blue,0,2,0,4,2,0,
+151,Uly,841,32,Blue,1,0,0,5,6,0,
+152,Son,4999,32,Blue,1,0,0,3,1,0,They defended against 4201 by pushing. They mostly stayed on the opponent's 1. 
+153,Son,5510,33,Blue,0,0,1,0,2,0,They didn't score or play defense. 
+154,Bra,980,33,Blue,0,0,0,0,0,0,This robot did not play the match.
+155,Ang,3408,33,Red,1,0,3,3,5,1,
+156,Uly,1197,33,Blue,0,2,0,5,4,1,
+157,And,7051,33,Red,0,0,0,0,5,0,came close to climbing
+158,Bra,6658,34,Blue,1,0,0,3,3,0,
+159,And,4964,34,Red,1,0,0,0,0,0,Drove around randomly the entire game like a blindfolded chicken
+160,Son,6904,34,Blue,1,0,0,0,0,0,They tried to climb but weren't successful. 
+161,Uly,6658,34,Blue,1,0,0,2,4,0,
+162,Son,6904,34,Blue,1,0,0,0,0,0,They tried to climb but weren't successful. 
+163,Ang,3952,34,Red,1,0,0,0,0,1,"Didn’t attempt shooting (defense bot)
+
+Attempted climb, potentially may have been able to do it successfully except for the fact that another robot came onto their 1 and kinda messed it up..."
+164,Tif,1759,5,Blue,1,0,0,0,0,0,Robot just kind of died and would move super slowly around with 0 particular purpose 
+165,Rus,5512,35,Blue,1,0,0,0,0,0,disabled most of match; battery fell out
+166,Hee,2576,35,Blue,0,1,1,2,0,0,
+167,Yae,5089,35,Red,1,3,0,8,1,0,Has grappling hook as climber but wasn't able to climb
+168,Tif,7185,35,Red,0,0,0,0,0,0,Intake fell off of the robot
+169,Mag,4123,35,Blue,1,1,1,2,3,1,
+170,Rus,4400,36,Blue,1,3,0,3,3,0,disabled for a little bit around end
+171,Hee,5634,36,Blue,1,0,0,0,0,0,Has 0 input
+172,Yae,987,36,Red,1,2,4,24,10,1,
+173,Tif,1759,36,Red,0,0,0,0,3,0,Had trouble driving; seemed to be moving 1ways instead of forwards
+174,Ang,4019,36,Red,1,0,0,0,3,1,"Looks unsure of what to do
+
+Attempted to climb on the 1"
+175,Mag,4578,36,Blue,1,0,0,0,0,0,They didnt deploy climb but they had as an option
+176,Hee,597,37,Blue,1,3,0,7,0,0,
+177,Rus,6000,37,Blue,0,0,0,0,0,0,intake 0 work (band loose)
+178,Mag,5669,37,Blue,1,0,0,2,1,0,
+179,Ang,7033,37,Red,1,0,0,0,0,1,* attempted 1 climb but failed
+180,Tif,1452,37,Red,1,1,2,2,1,0,"Something fell off the robot halfway through 
+Took a long time to load with cells"
+181,Yae,7051,37,Red,0,0,0,1,3,0,Shot in some balls but driver seemed like they weren't sure where to go and some balls were shot in the opposite direction
+182,Hee,980,38,Blue,1,0,0,0,0,0,Did not show up 
+183,Rus,4501,38,Blue,1,4,1,3,1,0,right 1 wheels didn't work
+184,Yae,5802,38,Red,1,0,0,10,1,1,They scored some points in auto but I wasn't able to see so I put 0 for all of the auto questions
+185,Ang,207,38,Red,1,0,0,13,3,0,
+186,Tif,5512,38,Red,0,0,0,0,0,0,Kept running into things like other robots and the walls
+187,Mag,606,38,Blue,1,0,0,0,6,0,
+188,Mag,1197,39,Blue,1,0,0,3,6,1,
+189,Rus,7455,39,Blue,1,0,0,0,0,0,bumperbot
+190,Hee,5089,39,Blue,1,3,0,10,0,0,
+191,Ang,4123,39,Red,1,3,1,6,3,1,
+192,Tif,4400,39,Red,1,1,2,1,2,0,
+193,Yae,8159,39,Red,1,0,0,0,0,0,Their shooter couldn't shoot properly and they tried to climb but the time ran out
+194,Yae,8159,39,Red,1,0,0,0,0,0,Their shooter couldn't shoot properly and they tried to climb but the time ran out
+195,Jam,7447,40,Red,0,0,0,0,0,0,
+196,Zac,1452,40,Red,0,3,0,3,1,0,
+197,Aya,4964,40,Blue,1,0,0,0,0,0,They didn't move most of the game. 
+198,Zac,5124,41,Red,1,0,0,19,0,1,
+199,Aya,6658,41,Blue,1,0,0,5,5,0,
+200,Isa,7185,41,Red,0,0,0,0,0,0,
+201,Jam,7185,41,Red,0,0,0,0,0,0,
+202,Isa,6904,42,Blue,0,0,0,0,0,0,just defense
+203,Jam,7033,42,Red,1,0,0,0,0,0,
+204,Zac,42,987,Red,1,5,1,11,8,0,
+205,Aya,6938,42,Blue,1,0,0,0,0,0,Moved around but didn't shoot or collect power cells. 
+206,Dav,3408,42,Blue,1,3,0,0,3,0,
+207,Jam,4999,43,Red,1,0,0,2,2,0,
+208,Aya,4019,43,Blue,1,0,0,1,2,0,
+209,Isa,2710,43,Blue,1,0,0,9,3,0,
+210,Zac,2637,43,Red,1,3,0,12,0,0,
+211,Dav,1836,43,Blue,0,3,0,2,1,1,
+212,Isa,2710,43,Blue,1,0,0,9,3,0,
+213,Isa,1759,44,Blue,1,0,0,0,0,0,
+214,Zac,1515,44,Red,0,0,0,11,7,1,
+215,Aya,2576,44,Blue,0,3,0,0,3,0,Ball got stuck during the match. 
+216,Jam,3952,44,Red,1,0,0,0,0,0,
+217,Dav,1758,45,Blue,1,0,3,0,0,0,
+218,Cru,3952,25,Blue,1,0,0,0,1,0,
+219, Is,980,45,Blue,0,0,0,0,0,0,wasnt on field
+220,Roy,8159,45,Blue,0,0,0,0,0,0,
+221,Ken,597,45,Red,1,0,3,4,0,0,
+222,Rus,4964,45,Red,1,0,0,0,0,0,disabled for 95% of match
+223,Roy,841,46,Blue,1,0,0,9,3,0,
+224,Rus,4400,46,Red,1,0,0,0,7,1,limp shot arc
+225,Cru,1836,26,Blue,0,1,0,0,0,1,
+226,Ken,3408,46,Red,1,1,2,1,1,1,
+227,Uly,5510,46,Red,0,0,0,1,2,0,
+228,Rus,3512,48,Red,1,0,3,1,0,0,
+229,Roy,1759,47,Blue,1,0,0,0,3,0,
+230,Ken,3952,47,Red,1,0,0,0,0,0,
+231,And,5634,47,Blue,1,0,0,0,0,0,
+232,Uly,1197,47,Red,0,2,3,3,2,1,
+233,Roy,1515,48,Blue,0,2,0,5,7,0,
+234,Rus,4123,48,Red,1,2,1,1,5,0,limp shooting
+235,And,4019,48,Blue,1,0,0,1,7,0,
+236,Ken,1452,48,Red,1,0,0,3,0,0,:(
+237,Uly,7185,48,Red,0,0,0,0,0,0,
+238,Rus,5124,49,Red,1,0,2,15,1,0,
+239,Roy,687,49,Blue,1,0,3,4,5,0,
+240,Jus,5802,24,Red,1,3,0,6,5,1,
+241,And,1836,49,Blue,0,0,0,6,0,0,
+242,Uly,5669,49,Red,0,0,0,5,1,1,
+243,Jus,5553,50,Blue,1,2,1,3,3,1,Yellow card for jumping railing
+244,Esm,6000,50,Blue,1,0,0,0,0,0,
+245,dav,5512,50,Red,1,0,0,0,0,0,
+246,Mag,6658,50,Red,1,0,2,0,0,0,
+247,GIA,2710,50,Red,1,3,0,5,2,0,
+248,dav,6904,51,Red,1,0,0,0,0,1,
+249,Jac,7051,51,Blue,0,0,0,1,4,1,
+250,Jus,2576,51,Blue,0,3,0,2,3,0,
+251,Gia,606,51,Red,0,0,0,0,0,0,
+252,Mag,4999,51,Red,1,0,0,4,6,0,
+253,Jac,5089,52,Blue,1,2,0,4,0,0,
+254,Gia,7455,52,Red,1,0,0,0,0,0,
+255,Jus,1836,52,Blue,1,3,0,8,2,0,
+256,Dav,1759,51,Red,1,0,0,2,2,0,
+257,Mag,841,52,Red,1,0,0,4,8,0,
+258,Alo,987,50,Blue,1,2,1,11,2,1,
+259,Alo,7447,51,Blue,1,0,0,0,0,0,The robot wasn’t moving in the beginning of teleop.
+260,Alo,5802,52,Blue,1,2,0,7,1,0,
+261,Rus,1452,53,Blue,1,1,0,0,0,0,hard defended by 980; maybe flywheel 0 work; 0 shoot whole teleop
+262,Tif,3952,53,Blue,1,3,0,0,0,0,Robot died during teleop but was fine during auto 
+263,Dan,3408,53,Red,1,0,2,1,6,1,robot slow
+264,Dav,980,53,Red,1,0,0,0,1,0,
+265,Isa,597,54,Red,1,2,0,6,1,0,
+266,Rus,606,54,Blue,1,0,0,0,0,0,"stopped moving, 0 disabled"
+267,Tif,4400,54,Blue,1,3,0,2,3,0,"Stopped a little halfway through
+Missed a lot of balls"
+268,Rus,4019,55,Blue,1,0,0,2,1,0,0 move most of match
+269,Isa,2710,55,Red,1,3,0,8,3,1,
+270,Tif,207,55,Blue,1,0,0,7,5,0,"Shot low a lot, barely clearing the target"
+271,Ken,4578,49,Red,1,0,0,0,0,0,
+272,Ken,7033,55,Red,1,0,0,0,0,0,
+273,Isa,5512,56,Red,1,0,0,0,0,0,
+274,Dav,5634,56,Red,1,0,0,0,0,0,
+275,Ken,1197,56,Red,1,2,2,5,8,1,
+276,Rus,1515,56,Red,1,3,2,18,2,0,hook fell off for climb; always falls off
+277,Tif,5669,56,Blue,1,0,0,12,0,0,Very accurate shooter
+278,Isa,6000,57,Red,1,0,0,0,0,0,
+279,Ken,7185,57,Red,0,0,0,0,0,0,
+280,Dav,7051,57,Red,0,0,0,0,0,1,
+281,Rus,5510,57,Blue,1,0,1,0,3,0,slow movement; something wrong with drive train; didn't shoot much
+282,Tif,3512,57,Blue,1,2,1,0,0,0,
+283,Jus,1836,52,Blue,1,3,0,8,2,0,
+284,Alo,4964,57,Blue,0,0,0,0,0,0,
+285,Zac,2637,58,Blue,1,1,2,11,2,1,
+286,Jus,6938,58,Blue,1,0,0,0,0,0,Actually ok defense
+287,Han,6904,58,Red,1,0,0,0,0,1,They did not score at all.
+288,Jus,4501,59,Blue,1,0,0,4,1,0,
+289,Han,6658,59,Red,1,3,0,0,0,0,They did not score at all.
+290,Mar,8159,58,Red,0,0,0,0,1,0,
+291,Han,1515,60,Red,1,0,0,0,0,1,Shooter wasn’t working. They did not score at all.
+292,Jus,5089,60,Blue,1,0,1,1,0,0,
+293,syd,4400,60,Blue,0,3,0,2,1,1,i don’t k0w if this is accurate bc i kept losing them 
+294,syd,5802,61,Blue,1,3,1,9,4,1,
+295,Jus,597,61,Blue,1,1,2,7,3,0,Have a different 1 wheel in drivetrain
+296,Han,6938,61,Red,1,0,0,0,0,0,Something wrong with robot. Lack of movement. Didn’t score at all.
+297,Mar,2576,59,Red,0,0,0,2,1,1,
+298,Jus,1197,62,Blue,1,3,1,2,5,1,
+299,syd,987,62,Blue,1,7,0,17,4,1,god-like
+300,Han,980,62,Red,1,0,0,0,0,0,Did not score at all.
+301,Ale,5512,63,Red,0,0,0,0,0,0,
+302,Bel,5124,63,Blue,1,3,0,4,2,1,
+303,Jac,7033,63,Red,1,0,0,0,0,1,
+304,Ang,1759,63,Red,0,0,0,0,0,0,Robot was dead
+305,Uly,841,63,Blue,0,0,0,2,8,0,
+306,Mag,7051,63,Blue,1,0,0,1,2,1,
+307,Bel,5669,64,Blue,1,0,0,0,1,0,
+308,Jac,6000,64,Red,1,0,0,0,0,0,
+309,Mag,4201,64,Blue,1,2,0,20,4,1,
+310,Ale,687,64,Red,1,3,0,7,3,0,
+311,Ang,4501,64,Red,1,3,0,5,4,1," - climb was unsuccessful 
+- driving was very jagged and in sharp movements; not smooth"
+312,Uly,4123,64,Blue,0,3,0,5,1,0,
+313,Sia,5553,58,Red,1,2,0,0,7,1,Same starting position?
+314,Mag,6904,65,Blue,1,0,0,0,0,1,
+315,Jac,4578,65,Red,1,0,0,0,0,1,
+316,Ale,4999,65,Red,1,0,0,8,3,0,
+317,Bel,5510,65,Blue,1,0,0,1,3,0,They attempted a climb before running out of time
+318,Sia,987,59,Red,1,2,2,29,2,1,Drivers are very good
+319,Uly,7455,65,Blue,0,0,0,0,0,0,
+320,Ang,3512,65,Red,1,2,1,2,2,1,
+321,Sia,3408,60,Red,1,0,0,0,0,0,
+322,Soa,1846,62,Red,1,2,0,9,0,1,Tall bot. Blocked teammates shots in telop
+323,Jac,2637,66,Red,1,1,2,0,0,1,
+324,Ale,8159,66,Red,1,0,0,0,0,0,
+325,Bel,7185,66,Blue,0,0,0,0,0,1,tenkaCould not pick up any balls
+326,Ang,5634,66,Red,1,0,0,0,0,0,The drivers seemed like they didn’t k0w what to do after alliance members died...
+327,Mag,207,66,Blue,1,0,0,4,1,0,
+328,Uly,2576,66,Blue,0,1,1,1,0,1,
+329,Roy,4400,67,Blue,1,3,0,5,0,0,
+330,Isa,1452,67,Red,1,2,0,4,0,0,
+331,Log,4019,67,Red,0,0,0,1,3,0,
+332,Jul,1197,67,Blue,0,0,0,10,1,1,
+333,Mag,1759,67,Blue,0,0,0,2,2,0,
+334,Roy,5124,68,Blue,1,0,0,5,0,0,
+335,Log,7447,68,Red,1,0,0,0,4,0,
+336,Jul,987,68,Blue,0,5,0,13,0,1,Scores consistently into high port. 
+337,Mag,5512,68,Red,0,0,0,0,0,0,Robot prob wasnt working
+338,Isa,1515,68,Red,1,2,0,9,3,1,
+339,Roy,7455,69,Blue,1,0,0,0,0,0,
+340,Mag,5512,69,Blue,1,0,0,0,0,0,Robot list COMS
+341,Log,3408,69,Blue,1,1,2,1,5,1,
+342,Isa,207,69,Red,1,0,0,0,0,0,
+343,Jul,6000,69,Blue,0,0,0,0,0,1,
+344,Roy,1836,70,Blue,1,0,0,5,3,1,
+345,Isa,6938,70,Red,1,0,0,0,0,0,
+346,Log,7051,70,Red,1,0,0,1,3,0,
+347,Mag,2637,70,Blue,0,0,0,2,2,0,
+348,Jul,6658,70,Blue,1,0,0,0,3,0,"Were played defense against, made it hard to score. "
+349,Gia,5669,71,Red,1,3,0,0,0,0,
+350,And,4964,71,Blue,1,0,0,0,0,0,
+351,Tan,4999,71,Blue,1,0,0,5,1,0,
+352,Gia,6904,72,Red,1,0,0,0,0,0,
+353,Lil,5634,72,Red,1,0,0,0,0,0,bumper fell off towards end of match 
+354,Tan,597,72,Blue,1,1,0,8,1,0,Has a climb but did not grab on the bar. They fell off the bar 
+355,and,5089,73,Blue,1,0,3,2,3,0,
+356,Lil,5553,73,Red,1,0,0,9,1,1,could not see beginning of match 
+357,Pra,3952,73,Red,1,3,0,5,0,0,
+358,Tan,3512,73,Blue,1,0,0,0,0,1,Did not shoot but had a mechanism which looked like it could score high
+359,Pra,841,72,Red,1,3,0,2,3,0,
+360,Gia,4578,73,Red,1,0,0,0,0,0,
+361,Gia,4578,73,Red,1,0,0,0,0,0,
+362,Tan,1515,74,Blue,1,3,0,8,4,0,

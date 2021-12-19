@@ -13,13 +13,14 @@ def feed():
 
 @app.route("/submit", methods=['POST'])
 def test_submit():
+    # return flask.request.form
     db.insert_raw_data(flask.request.form)
     return flask.render_template("submission_success.html", title="Submission Successful!")
 
 @app.route("/team/<int:team>")
 def team_view(team : int):
     title_string = "Team View: " + str(team)
-    return flask.render_template("team_view.html", title=title_string, headers=data.raw_match_data_headers_687, raw_match_data = db.get_raw_data_by_team_anonymous(687), highlights=data.analyzed_data_team_highlights)
+    return flask.render_template("team_view.html", title=title_string, headers=data.raw_match_data_headers_687, raw_match_data = db.get_raw_data_by_team_anonymous(team), highlights=data.analyzed_data_team_highlights)
 
 @app.route("/data/analyzed")
 def analyzed_data():
