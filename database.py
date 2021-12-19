@@ -48,9 +48,19 @@ class Database:
         return self.execute_return_query(query, headers=False)
 
     def update_analyzed_data(self, team_number : int):
-        select_query = 'SELECT AVG(teleop_balls_scored), MAX(teleop_balls_scored), AVG(auto_balls_scored), MAX(auto_balls_scored), COUNT(yes) FROM raw_scouting_data WHERE team_number = ?;'
-        analyzed_data = self.execute_return_query(select_query, team_number)
-        print(analyzed_data)
+        select_query = 'SELECT AVG(teleop_balls_scored) AS avg_teleop_balls, MAX(teleop_balls_scored) AS max_teleop_balls, AVG(auto_balls_scored) AS avg_auto_balls, MAX(auto_balls_scored) AS max_auto_balls, SUM(climb) AS climb_count, COUNT(*) AS num_matches FROM raw_scouting_data WHERE team_number = ?;'
+        analyzed_data = self.execute_return_query(select_query, team_number)[0]
+        if (analyzed_data['avg_teleop_balls'] != None):
+            update_query = 'UPDATE analyzed_scouting_data SET average_teleop_balls = ?, max_teleop_balls = ?, average_auto_balls = ?, max_auto_balls = ?, climb_frequency = ? WHERE team_number = ?;'
+            self.execute_void_query(update_query, analyzed_data['avg_teleop_balls'], analyzed_data['max_teleop_balls'], analyzed_data['avg_auto_balls'], analyzed_data['max_auto_balls'], analyzed_data['climb_count']/analyzed_data['num_matches'], team_number)
+        else:
+            insert_query = 'INSERT INTO analyzed_scouting_data VALUES (?, ?, ?, ?, ?, ?);'
+            self.execute_void_query(insert_query, team_number, analyzed_data['avg_teleop_balls'], analyzed_data['max_teleop_balls'], analyzed_data['avg_auto_balls'], analyzed_data['max_auto_balls'], analyzed_data['climb_count']/1)
 
+    def get_analyzed_data_by_team(self, team_number : int):
+        query = 'SELECT * FROM analyzed_scouting_data'
 
+db = Database("scouting_data.db")
+db.update_analyzed_data(687)
+db.update_analyzed_data(1323)
 
