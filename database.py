@@ -55,7 +55,7 @@ class Database:
             self.execute_void_query(update_query, analyzed_data['avg_teleop_balls'], analyzed_data['max_teleop_balls'], analyzed_data['avg_auto_balls'], analyzed_data['max_auto_balls'], analyzed_data['climb_count']/analyzed_data['num_matches'], team_number)
         else:
             insert_query = 'INSERT INTO analyzed_scouting_data VALUES (?, ?, ?, ?, ?, ?);'
-            self.execute_void_query(insert_query, team_number, analyzed_data['avg_teleop_balls'], analyzed_data['max_teleop_balls'], analyzed_data['avg_auto_balls'], analyzed_data['max_auto_balls'], analyzed_data['climb_count']/1)
+            self.execute_void_query(insert_query, team_number, analyzed_data['avg_teleop_balls'], analyzed_data['max_teleop_balls'], analyzed_data['avg_auto_balls'], analyzed_data['max_auto_balls'], analyzed_data['climb_count']/analyzed_data['num_matches'])
 
     def get_analyzed_data_by_team(self, team_number : int):
         query = 'SELECT * FROM analyzed_scouting_data WHERE team_number = ?;'
@@ -76,12 +76,17 @@ class Database:
     def contains_team_number(self, team_number):
         query = 'SELECT COUNT(*) FROM raw_scouting_data WHERE team_number = ?;'
         return self.execute_return_query(query, team_number, headers=False)[0][0] > 0
+    
+    def get_analyzed_data_highlights(self, team_number):
+        query = 'SELECT average_teleop_balls, average_auto_balls, climb_frequency FROM analyzed_scouting_data WHERE team_number = ?;'
+        return self.execute_return_query(query, team_number)
 
-db = Database("scouting_data.db")
+# db = Database("scouting_data.db")
 # print(db.get_all_team_numbers())
 # db.analyze_all_teams()
 # db.update_analyzed_data(687)
 # # db.update_analyzed_data(1323)
 # print(db.get_analyzed_data_by_team(687))
-print(db.contains_team_number(1323))
-print(db.contains_team_number(4201))
+# print(db.contains_team_number(1323))
+# print(db.contains_team_number(4201))
+# print(db.get_analyzed_data_highlights(687))
