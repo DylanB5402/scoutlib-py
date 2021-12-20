@@ -4,11 +4,10 @@
 
     <div class="columns">
         <div class="column">
-            <img src="{{url_for('static', filename='687_robot.jpg')}}" width="500px" height="auto"/>
+            <!-- <img src="https://i.imgur.com/Ac5NG9Qh.jpg" width="500px" height="auto" alt="no image available"></a> -->
             {% for (title, value) in highlights.items() %}
                 <h3>{{title}}: {{value}}</h3>
             {% endfor %}
-            <!-- {{highlights}} -->
         </div>
         <div class="column">
             <h2> <strong> Raw Data: </strong></h2>

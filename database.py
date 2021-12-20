@@ -1,13 +1,20 @@
 import sqlite3
+import tba_images
 
 class Database:
 
     def __init__(self, db_file : str):
         self.filename = db_file
         create_raw_data_table = 'CREATE TABLE IF NOT EXISTS raw_scouting_data (data_id INTEGER PRIMARY KEY AUTOINCREMENT, scout_name TEXT, team_number INTEGER, match_number INTEGER, alliance_color TEXT, auto_movement INTEGER, auto_balls_scored INTEGER, auto_balls_missed INTEGER, teleop_balls_scored INTEGER, teleop_balls_missed INTEGER, climb INTEGER, comment TEXT);'
+        
         create_analyzed_data_table = 'CREATE TABLE IF NOT EXISTS analyzed_scouting_data(team_number INTEGER, average_teleop_balls REAL, max_teleop_balls INTEGER, average_auto_balls REAL, max_auto_balls INTEGER, climb_frequency REAL);'
+        
+        create_images_table = 'CREATE TABLE IF NOT EXISTS team_images (team_number INTEGER, image_url TEXT);'
+
         self.execute_void_query(create_raw_data_table)
         self.execute_void_query(create_analyzed_data_table)
+        self.execute_void_query(create_images_table)
+
 
     def execute_void_query(self, query_text, *parameters):
         conn = sqlite3.connect(self.filename)
@@ -56,6 +63,21 @@ class Database:
         else:
             insert_query = 'INSERT INTO analyzed_scouting_data VALUES (?, ?, ?, ?, ?, ?);'
             self.execute_void_query(insert_query, team_number, analyzed_data['avg_teleop_balls'], analyzed_data['max_teleop_balls'], analyzed_data['avg_auto_balls'], analyzed_data['max_auto_balls'], analyzed_data['climb_count']/analyzed_data['num_matches'])
+            self.insert_image_from_tba(team_number)
+
+    def insert_image_from_tba(self, team_number: int):
+        url = tba_images.get_team_image(team_number)
+        print(url)
+        query = 'INSERT INTO team_images VALUES (?, ?);'
+        self.execute_void_query(query, team_number, url)
+
+    def insert_all_team_images(self):
+        for team in self.get_all_team_numbers():
+            self.insert_image_from_tba(team[0])
+
+    def get_team_image(self, team_number : int):
+        query = 'SELECT image_url FROM team_images WHERE team_number = ?;'
+        return self.execute_return_query(query, team_number, headers=False)[0][0]
 
     def get_analyzed_data_by_team(self, team_number : int):
         query = 'SELECT * FROM analyzed_scouting_data WHERE team_number = ?;'
@@ -81,12 +103,16 @@ class Database:
         query = 'SELECT average_teleop_balls, average_auto_balls, climb_frequency FROM analyzed_scouting_data WHERE team_number = ?;'
         return self.execute_return_query(query, team_number)
 
-# db = Database("scouting_data.db")
+    
+
+db = Database("scouting_data.db")
 # print(db.get_all_team_numbers())
 # db.analyze_all_teams()
+# db.insert_all_team_images()
 # db.update_analyzed_data(687)
 # # db.update_analyzed_data(1323)
 # print(db.get_analyzed_data_by_team(687))
 # print(db.contains_team_number(1323))
 # print(db.contains_team_number(4201))
 # print(db.get_analyzed_data_highlights(687))
+# print(db.get_team_image(687)[0][0])
