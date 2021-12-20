@@ -50,7 +50,7 @@ class Database:
     def update_analyzed_data(self, team_number : int):
         select_query = 'SELECT AVG(teleop_balls_scored) AS avg_teleop_balls, MAX(teleop_balls_scored) AS max_teleop_balls, AVG(auto_balls_scored) AS avg_auto_balls, MAX(auto_balls_scored) AS max_auto_balls, SUM(climb) AS climb_count, COUNT(*) AS num_matches FROM raw_scouting_data WHERE team_number = ?;'
         analyzed_data = self.execute_return_query(select_query, team_number)[0]
-        if (analyzed_data['avg_teleop_balls'] != None):
+        if (self.execute_return_query(' SELECT COUNT(*) AS count FROM analyzed_scouting_data WHERE team_number=?;', team_number)[0]['count'] != 0):
             update_query = 'UPDATE analyzed_scouting_data SET average_teleop_balls = ?, max_teleop_balls = ?, average_auto_balls = ?, max_auto_balls = ?, climb_frequency = ? WHERE team_number = ?;'
             self.execute_void_query(update_query, analyzed_data['avg_teleop_balls'], analyzed_data['max_teleop_balls'], analyzed_data['avg_auto_balls'], analyzed_data['max_auto_balls'], analyzed_data['climb_count']/analyzed_data['num_matches'], team_number)
         else:
@@ -58,9 +58,30 @@ class Database:
             self.execute_void_query(insert_query, team_number, analyzed_data['avg_teleop_balls'], analyzed_data['max_teleop_balls'], analyzed_data['avg_auto_balls'], analyzed_data['max_auto_balls'], analyzed_data['climb_count']/1)
 
     def get_analyzed_data_by_team(self, team_number : int):
-        query = 'SELECT * FROM analyzed_scouting_data'
+        query = 'SELECT * FROM analyzed_scouting_data WHERE team_number = ?;'
+        return self.execute_return_query(query, team_number, headers=False)
+
+    def get_all_analyzed_data(self):
+        query = 'SELECT * FROM analyzed_scouting_data ORDER BY team_number;'
+        return self.execute_return_query(query, headers=False)
+
+    def analyze_all_teams(self):
+        for team in self.get_all_team_numbers():
+            self.update_analyzed_data(team[0])
+
+    def get_all_team_numbers(self):
+        query = 'SELECT DISTINCT team_number FROM raw_scouting_data ORDER BY team_number;'
+        return self.execute_return_query(query, headers=False)
+
+    def contains_team_number(self, team_number):
+        query = 'SELECT COUNT(*) FROM raw_scouting_data WHERE team_number = ?;'
+        return self.execute_return_query(query, team_number, headers=False)[0][0] > 0
 
 db = Database("scouting_data.db")
-db.update_analyzed_data(687)
-db.update_analyzed_data(1323)
-
+# print(db.get_all_team_numbers())
+# db.analyze_all_teams()
+# db.update_analyzed_data(687)
+# # db.update_analyzed_data(1323)
+# print(db.get_analyzed_data_by_team(687))
+print(db.contains_team_number(1323))
+print(db.contains_team_number(4201))
