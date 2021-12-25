@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <!-- <div id="data_graph" style="width:1000px;height:500px;"></div> -->
+    <form id="selecter">
+        <label class="radio">
+          <input id="teleop" type="radio" name="alliance_color" value="red">
+            Average Teleop Balls Scored
+        </label>
+        <br/>
+        <label class="radio">
+            <input id="auto" type="radio" name="alliance_color" value="blue">
+            Average Auto Balls Scored
+        </label>
+        <br/>
+        <label class="radio">
+            <input id="climb" type="radio" name="alliance_color" value="blue">
+            Climb Frequency
+        </label>
+    </form>
+    <script src="{{url_for('static', filename='graph_selection.js')}}"></script>
+
+{% endblock %}

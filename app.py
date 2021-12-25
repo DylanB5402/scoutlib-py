@@ -26,15 +26,22 @@ def team_view(team : int):
     else:
          return flask.render_template("base.html", title=f"Data for Team #{team} is not available")
 
-
 @app.route("/data/analyzed")
 def analyzed_data():
     return flask.render_template("tabular_data_view.html", title="Analyzed Data", headers=data.analyzed_data_headers, rows=db.get_all_analyzed_data())
 
-@app.route("/data/ranked")
-def ranked_data():
-    return flask.render_template("tabular_data_view.html", title="Ranked Data", headers=data.ranked_data_headers, rows=data.ranked_data)
+# @app.route("/data/ranked")
+# def ranked_data():
+#     return flask.render_template("tabular_data_view.html", title="Ranked Data", headers=data.ranked_data_headers, rows=data.ranked_data)
 
 @app.route("/data/raw")
 def raw_data():
     return flask.render_template("tabular_data_view.html", title="Raw Data", headers=data.raw_match_data_headers, rows=db.get_all_raw_data_anonymous())
+
+@app.route("/graphs")
+def graphs():
+    return flask.render_template("graphs.html", title="Data Graphs")
+
+@app.route("/api/averages")
+def api_averages():
+    pass
