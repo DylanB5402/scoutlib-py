@@ -103,6 +103,15 @@ class Database:
         query = 'SELECT average_teleop_balls, average_auto_balls, climb_frequency FROM analyzed_scouting_data WHERE team_number = ?;'
         return self.execute_return_query(query, team_number)
 
+    def get_analyzed_teleop_averages(self):
+        return self.execute_return_query('SELECT team_number, average_teleop_balls FROM analyzed_scouting_data;', headers=False)
+
+    def get_analyzed_auto_averages(self):
+        return self.execute_return_query('SELECT team_number, average_auto_balls FROM analyzed_scouting_data;', headers=False)
+
+    def get_analyzed_climb_frequencies(self):
+        return self.execute_return_query('SELECT team_number, climb_frequency FROM analyzed_scouting_data;', headers=False)
+
     
 
 db = Database("scouting_data.db")
